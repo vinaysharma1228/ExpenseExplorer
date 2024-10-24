@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80846FAA"
+    tools:context=".ExpensesAddActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#451E5D"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:padding="1dp"
+            android:layout_width="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back">
+
+        </ImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:padding="5dp"
+            android:layout_margin="5dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Somnath and Diu Trip"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense Tracker"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Expenses"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Expenses Name  : "
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/expName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edt_bg"
+                android:hint="Eg. train tickets"
+                android:padding="5dp"
+                android:inputType="text"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Expenses cate.   : "
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <Spinner
+                android:id="@+id/expCategory"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edt_bg"
+                android:entries="@array/expNameCollection"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Select Payment Mode  : "
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <Spinner
+                android:id="@+id/expPayMode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edt_bg"
+                android:entries="@array/expPayMode"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Select Expense Place   : "
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <Spinner
+                android:id="@+id/expPlace"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edt_bg"
+                android:entries="@array/expPlace"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Expense Amount : "
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/expAmount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Amount"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:background="@drawable/edt_bg">
+
+            </EditText>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/addExpBtn"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Add Expense"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/white"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/addExpMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

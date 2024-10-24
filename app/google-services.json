@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "94091777899",
+    "firebase_url": "https://expenseexplorer-ad65c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "expenseexplorer-ad65c",
+    "storage_bucket": "expenseexplorer-ad65c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94091777899:android:0298476b37cd405e281e2e",
+        "android_client_info": {
+          "package_name": "com.example.expenseexplorer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf3-75QpVpCFnU0vFOVS0t-gk_0Nyx4fM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

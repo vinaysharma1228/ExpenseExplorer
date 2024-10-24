@@ -1,0 +1,54 @@
+<resources>
+
+    <string-array name="expNameCollection">
+        <item>Transport</item>
+        <item>Sport Activity</item>
+        <item>Hotel</item>
+        <item>Food</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="expPayMode">
+        <item>Online</item>
+        <item>Cash</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="expPlace">
+        <item>Somnath</item>
+        <item>Diu</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="memberName">
+        <item>VINAY KUMAR SHARMA</item>
+        <item>VISHAL SHARMA</item>
+        <item>PAPPU SAH</item>
+        <item>PREM SHAH</item>
+        <item>MH MISHUK</item>
+        <item>SHREEMA</item>
+        <item>KINLEY</item>
+        <item>ANURADHA</item>
+        <item>PEMA</item>
+        <item>UGYEN</item>
+        <item>LHADEN</item>
+        <item>KARMA</item>
+
+    </string-array>
+    <string name="app_name">ExpenseExplorer</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="loginInfo">
+        Login with your username and password to track your expenses during somnath and diu trip
+    </string>
+
+    <string name="depositInfo">
+        Add money to the respective member . This will reflected to the respective member account.
+    </string>
+</resources>
